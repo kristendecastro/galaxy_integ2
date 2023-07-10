@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+/**NAVIGATION BAR**/
+*{
+  margin: 0;
+  padding: 0;
+  //**box-sizing: border-box;**/
+}
+
+nav{
+  font-family: 'Poppins',sans-serif;
+  position: fixed;
+  /**background: #FFFFFA;**/
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;  
+    color: white;
+} 
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+}
+.menu .logo {
+  position: relative;
+}
+.logo-icon {
+  position: absolute;
+  top: 8px; /* adjust the value as needed */
+  left: 5px; /* adjust the value as needed */
+  width: 35px; /* adjust the value as needed */
+  height: auto;
+}
+.menu .logo a {
+  margin: 70px;
+  text-decoration: none;
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  /**color: black;**/
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: white;
+  color: black;
+}
+
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Dropdown menu */
+.menu li.dropdown ul.dropdown-menu {
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  
+  min-width: 160px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  
+}
+.menu li.dropdown ul.dropdown-menu li {
+  padding: 10px;
+}
+.menu li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+.menu li.dropdown:hover .dropdown-toggle {
+  background-color: white;
+  color: black;
+}
+
+/**BACKGROUND**/
+	body {
+		background-image: url("https://images-assets.nasa.gov/image/iss050e066094/iss050e066094~large.jpg");
+	}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 14%;
+  margin-left: -10px;
+}
+.content h1{
+	font-family: poppins, sans-serif;
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-shadow: 2px 2px 2px 5px #000000 ;
+}
+.content p{
+	font-family: poppins, sans-serif;
+	font-size: 18px;
+	font-weight:500;
+    margin: auto;
+	max-width: 1000px;
+    text-align: justify;
+	/**text-shadow: 2px 2px #000000;**/
+	padding: 15px;
+}
+.content p {
+	background: #f1f1f1;
+	background: rgba(0,0,0,0.1);
+	max-width: 1000px;
+}
